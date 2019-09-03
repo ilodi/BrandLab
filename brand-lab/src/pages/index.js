@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 
 //Componentes
-import Footer from '../components/Footer'
+import Header from '../components/Header';
+import WeMake from '../components/WeMake';
+import Footer from '../components/Footer';
 
 
 //Assets
@@ -11,12 +13,9 @@ class Index extends Component{
   render(){
     return(
    <>
-   <div>
-        <h1>
-          Hola
-        </h1>
-      </div>
+      <Header logoBrand={logoBrand}/>
 
+      <WeMake />
       <Footer logoBrand={logoBrand}/>
    </>
     );

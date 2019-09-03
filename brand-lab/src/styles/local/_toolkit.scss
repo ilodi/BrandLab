@@ -2,6 +2,9 @@
 
 $orange: #fe7e51;
 $blue: #263d53;
+$green: #009099;
+$grey: #46515e;
+$yellow: #f9de61;
 
 //Config
 
@@ -10,4 +13,14 @@ body {
   font-family: 'Ropa Sans', sans-serif;
   margin: 0;
   padding: 0;
+}
+
+//tansition_hover
+
+@mixin hover_ui($time, $bcolor, $fcolor) {
+  transition-property: all;
+  transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition-duration: $time;
+  background: $bcolor;
+  color: $fcolor;
 }

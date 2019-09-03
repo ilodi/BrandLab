@@ -1,0 +1,44 @@
+.WeMake {
+  background: $orange;
+  display: flex;
+  padding: 2em 0;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+
+.topWeMake{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2{
+    font-size: 2.1em;
+    padding-bottom: .5em;
+  }
+  .hrLine {
+    border: 0;
+    background: $green;
+    height: 0.5em;
+    width: 10vw;
+  }
+}
+  .bootomWeMake {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    margin: 1em 0;
+    .boxContext {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 200px;
+    }
+    .text {
+      text-align: center;
+    }
+    img {
+      width: 144px;
+    }
+  }
+}

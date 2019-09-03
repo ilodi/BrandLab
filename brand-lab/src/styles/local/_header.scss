@@ -1,0 +1,38 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em 0;
+  .logoHeader {
+    width: 144px;
+  }
+
+  ul.menuBrand {
+    list-style: none;
+    display: flex;
+    li {
+      margin-right: 1em;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        border-bottom: 0px solid $yellow;
+        padding-bottom: 0.7em;
+        letter-spacing: 0.05em;
+        cursor: pointer;
+        @include hover_ui(350ms, transparent, #fff);
+        &:hover {
+          @include hover_ui(350ms, transparent, $yellow);
+          border-bottom: 5px solid $yellow;
+        }
+        &:active {
+          @include hover_ui(350ms, transparent, $orange);
+          border-bottom: 5px solid $yellow;
+        }
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}
