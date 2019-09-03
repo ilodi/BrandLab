@@ -1,12 +1,16 @@
 import React from 'react';
 
 //
-const Footer = () => (
-  <>
-   <h2>
-     Footer
-   </h2>
-  </>
+const Footer = (props) => (
+  <footer>
+    <div className="left">
+    <img className="logoFooter" alt="laboratorio" src={props.logoBrand} />
+
+    </div>
+    <div className="right">
+
+    </div>
+  </footer>
 );
 
 ///

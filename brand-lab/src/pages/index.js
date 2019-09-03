@@ -1,14 +1,24 @@
-
 import React, {Component} from 'react';
+
+//Componentes
+import Footer from '../components/Footer'
+
+
+//Assets
+const logoBrand = require('../static/brand/logo.png');
 
 class Index extends Component{
   render(){
     return(
-      <secction>
+   <>
+   <div>
         <h1>
           Hola
         </h1>
-      </secction>
+      </div>
+
+      <Footer logoBrand={logoBrand}/>
+   </>
     );
   }
 }
