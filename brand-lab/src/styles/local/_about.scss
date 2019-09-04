@@ -1,0 +1,78 @@
+.about {
+  height: 987px;
+  display: flex;
+  width: 100%;
+
+  img.backgroundAbout {
+    object-fit: contain;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  .boxAbout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+  }
+  .left {
+    img.historiImg {
+      width: 40vw;
+      filter: blur(0);
+      transition: filter 3s ;
+      &:hover{
+        filter: blur(1px);
+        transition: filter 3s ;
+      }
+    }
+    .boxAux{
+      position: relative;
+      cursor: pointer;
+      margin: 0.7em;
+      h2{
+        position: absolute;
+        z-index: 1;
+        top: 1em;
+        left: 1em;
+        color: #fff;
+      }
+    }
+  }
+  .rigth {
+    img.visionImg,
+    img.misionImg {
+      width: 20vw;
+    }
+    .boxAux{
+      position: relative;
+      margin: 0.7em;
+      cursor: pointer;
+      h2{
+        position: absolute;
+        z-index: 1;
+        top: 1em;
+        left: 1em;
+      }
+    }
+
+    img.visionImg{
+      filter: sepia(13);
+      transition: filter 3s ;
+      &:hover{
+        filter: sepia(0);
+        transition: filter 3s ;
+      }
+    }
+    img.misionImg{
+      filter: hue-rotate(55deg);
+      transition: filter 3s ;
+      &:hover{
+        filter: hue-rotate(-34deg);
+        transition: filter 3s ;
+      }
+    }
+  }
+}
