@@ -3,6 +3,9 @@ header {
   align-items: center;
   justify-content: space-around;
   padding: 1em 0;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
   .logoHeader {
     width: 144px;
   }
@@ -33,6 +36,51 @@ header {
     }
     @media only screen and (max-width: 768px) {
       display: none;
+    }
+  }
+}
+
+.hero {
+  height: 55vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .containHeroData {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    left: 16%;
+    .uiline {
+      background: #fbd9d4;
+      height: 5px;
+      width: 8vh;
+      margin-bottom: 1em;
+
+    }
+    h1 {
+      color: #fff;
+      font-size: 2.2em;
+      letter-spacing: 0.05em;
+    }
+    @media only screen and (max-width: 768px) {
+      left: 0;
+      .uiline{
+        margin-bottom: 0em;
+        margin-left: 2em;
+      }
+      h1 {
+        font-size: 2em;
+        line-height: 144%;
+        padding: 1em;
+      }
     }
   }
 }

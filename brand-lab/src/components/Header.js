@@ -1,38 +1,31 @@
-import React from 'react';
+import React,{Component} from 'react';
 //
-const Header = (props) => (
-  <header>
-    <div>
-    <img className="logoHeader" alt="laboratorio lab" src={props.logoBrand} />
+export default class Header extends Component {
 
+render(){
+  return(
+    <div className="hero" >
 
+      <img alt="Que hacemos en branLab" src={this.props.backgroundImg} />
+      <div className="containHeroData">
+    <div className="boxHeroInfo">
+    <div className="uiline" />
+      <h1>
+        {this.props.title}
+      </h1>
+      <div>
+        <button className="btnPrimary">
+         <span>
+         Ver Video
+         </span>
+        </button>
+      </div>
     </div>
-    <div>
-      <ul className="menuBrand">
-        <li>
-          <a>
-            ACERCA DE
-          </a>
-        </li>
-        <li>
-          <a>
-            EL EQUIPO
-          </a>
-        </li>
-        <li>
-          <a>
-           SERVICIOS
-          </a>
-        </li>
-        <li>
-          <a>
-           CONTACTO
-          </a>
-        </li>
-      </ul>
-    </div>
-  </header>
-);
 
+      </div>
+    </div>
+  );
+}
+
+}
 ///
-export default Header;

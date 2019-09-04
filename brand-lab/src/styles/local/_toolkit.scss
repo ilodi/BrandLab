@@ -24,3 +24,48 @@ body {
   background: $bcolor;
   color: $fcolor;
 }
+
+
+///Buttone styles
+.btnPrimary{
+  border-radius: 27px;
+  font-size: 1.4em;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+  border: 0;
+  margin-top: 1em;
+  @include hover_ui(350ms, $orange, #fff);
+  position: absolute;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7em 1em;
+  &::before{
+    content: '';
+    position: absolute;
+    display: flex;
+    width: 0%;
+    height: 100%;
+    background: $green;
+    transition: width .3s;
+  }
+  &:hover{
+    &::before{
+      width: 100%;
+      transition: width .3s;
+    }
+  }
+  &:focus{
+    @include hover_ui(500ms, transparent, $orange);
+    &::before{
+      width: 0%;
+      transition: width .3s;
+    }
+  }
+  span{
+    position: relative;
+  }
+}
