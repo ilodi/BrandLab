@@ -1,0 +1,96 @@
+.sectionForMore {
+  height: 600px;
+  padding: 3em;
+  background: rgb(14,24,35);
+  background: linear-gradient(0deg, rgba(14,24,35,1) 0%, rgba(40,49,59,1) 100%);
+  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);;
+  overflow: hidden;
+  @media only screen and (max-width: 768px) {
+padding: 0;
+  }
+  .areaFlex {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    bottom: 0;
+  }
+  h2 {
+    font-size: 2em;
+
+    color: #facd36;
+
+    font-weight: 500;
+
+    text-align: left;
+
+    @media only screen and (max-width: 768px) {
+font-size: 1.4em;
+font-weight: 400;
+letter-spacing: 0.5px;
+    }
+
+
+  }
+  p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+  }
+  .infoFor {
+    display: flex;
+    flex-direction: row;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  .groupsList {
+    padding: 2em;
+    width: 260px;
+    @media only screen and (max-width: 768px) {
+      padding: 0;
+    }
+  }
+
+  .imageAux {
+    width: 800px;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+  }
+}
+
+.likeLine {
+  margin-bottom: 0.9em;
+  background: rgba(255, 255, 255, 0.08);
+  width: 100%;
+  height: 1px;
+  margin-top: 1.5em;
+}
+
+.hexUx {
+  opacity: 0.4;
+  width: 55px;
+  padding: 2em 4em;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.hexUxAlt {
+  opacity: 0.2;
+  width: 16px;
+  padding: 1em 2em;
+  right: 0;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.onlymovile{
+  display: none;
+  @media only screen and (max-width: 768px) {
+    display: block;
+  }
+}

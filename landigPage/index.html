@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to Shara Biz</title>
+
+</head>
+
+<link rel="stylesheet" type="text/css" href="./asstets/styles/main.css">
+
+<body>
+
+    <div class="nav">
+        <div>
+            <img class="logo" src="./asstets/img/shra.svg">
+        </div>
+        <div class="areaInfoNav">
+            <p>
+                Contact Us,
+                <span>
+      If you need more information please send us an <a href="mailto:hi@sharabiz.com">email</a>
+  </span>
+            </p>
+        </div>
+    </div>
+
+    <div class="mainBox">
+
+        <div class="imgBackg" style="background-image:url('./asstets/img/bgWM.jpg');">
+            <img class="bgAux" src="/asstets/img/bg.svg">
+            <div class="textArea">
+                <!--  -->
+
+                <h2>
+     Are you liking what you see?
+
+    </h2>
+
+                <div>
+                    <a class="typeBtn">
+        FREE DOWNLOAD SHARA BIZ APP
+      </a>
+                </div>
+
+            </div>
+
+            <!--  -->
+            <img class="imagesPhone" src="/asstets/img/phone.png">
+            <!--  -->
+        </div>
+    </div>
+
+    <div class="areaInfo">
+        <div class="parfArea">
+            <div class="areaTxt">
+                <h2>
+            Perfect for busy people
+           </h2>
+                <p>
+                    It helps you to make your product or service known quickly and without complications, you can manage from a single product to a catalog of hundreds of products.
+                </p>
+            </div>
+            <div class="imagesAux">
+                <img src="./asstets/img/A.jpg" alt="./asstets/img/B.jpg">
+            </div>
+        </div>
+
+        <div class="parfArea bottomD">
+            <div class="imagesAux">
+                <img src="./asstets/img/B.jpg" alt="./asstets/img/C.jpg">
+            </div>
+            <div class="areaTxt">
+                <h2>Create community,<br> share and generate contacts.</h2>
+                <p>
+                    Contact future prospects for you and your business, by creating small microcommunities you can have a more detailed and precise control of how your business is becoming known.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="sectionForMore">
+        <div class="areaFlex">
+            <div class="infoFor">
+                <div class="groupsList">
+                    <div class="itemAbout">
+                        <img class="hexUxAlt" src="./asstets/img/hex.svg">
+                        <h2>Statistics</h2>
+                        <p>
+                            keep abreast of your statistical returns minute by minute.
+                        </p>
+                    </div>
+                    <div class="likeLine"></div>
+                    <div class="itemAbout">
+
+
+                        <h2>Groups</h2>
+                        <p>
+                            Stay in touch with your team or strategists to reach your goals.
+                        </p>
+                        <img class="hexUx" src="./asstets/img/hex.svg">
+                    </div>
+                </div>
+                <div class="likeLine onlymovile"></div>
+                <div class="groupsList">
+                    <div class="itemAbout">
+                        <img class="hexUx" src="./asstets/img/hex.svg">
+                        <h2>Bizcards</h2>
+                        <p>
+                            Presents products, services or anything in an original and modern way.
+                        </p>
+                    </div>
+                    <div class="likeLine"></div>
+                    <div class="itemAbout">
+
+
+
+                        <h2>Business Profile</h2>
+                        <p>
+                            a new way to get to know you as a person or company.
+                        </p>
+                        <img class="hexUxAlt" src="./asstets/img/hex.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="imageAux" src="./asstets/img/IHONE.svg">
+    </div>
+
+    <footer>
+        <div>
+            <p>ingenuity by: </p>
+            <img class="obsidianLogo" src="asstets/img/obsidianAltWhite.svg">
+        </div>
+    </footer>
+
+
+    <div class="modalContainer">
+        <div class="theModal">
+            <div class="areaLogo">
+                <img class="logoShara" src="./asstets/img/shra.svg">
+            </div>
+
+            <div class="infoContext">
+                <h3>
+      Download Shara Biz
+    </h3>
+                <div>
+                    <img src="./asstets/img/qr.svg">
+                </div>
+                <p>
+                    Scan this code with the camera
+                    <br> of your phone.
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--  -->
+    <script>
+        let btnModal = document.getElementsByClassName('typeBtn')[0];
+        let theModalContainer = document.getElementsByClassName('modalContainer')[0];
+        let theModal = document.getElementsByClassName('theModal')[0];
+        btnModal.addEventListener("click", () => {
+            theModalContainer.classList.add("showModal");
+            theModal.classList.add("UxModal");
+        });
+
+        theModalContainer.addEventListener("click", () => {
+            theModalContainer.classList.remove("showModal");
+            theModal.classList.remove("UxModal");
+        });
+    </script>
+    <!--  -->
+</body>
+
+</html>

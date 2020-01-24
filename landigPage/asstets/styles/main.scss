@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+@import 'fragments/_toolkits';
+@import 'fragments/_areaGoodTimes.scss';
+@import 'fragments/_areaInfo.scss';
+@import 'fragments/_modal.scss';
+@import 'fragments/_moreInfo.scss';
+@import 'fragments/_footer.scss';
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+.mainBox {
+  clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  min-height: 700px;
+  position: relative;
+
+  @media only screen and (max-width: 768px) {
+    background: #0f181f;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+    height: 80vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.imgBackg{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  z-index: 0;
+  align-items: center;
+  display: flex;
+  background-attachment: fixed;
+  &:before {
+    content: "";
+    background: rgba(15, 24, 31, 0.53);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media only screen and (max-width: 768px) {
+justify-content: center;
+  }
+}
+.nav {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0px 5px rgba(15, 23, 31, 0.5);
+  z-index: 6;
+  height: 71px;
+  display: flex;
+  align-items: center;
+  .areaInfoNav {
+    width: calc(100% - 74px);
+  }
+  p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #455261;
+    font-weight: 600;
+    span {
+      font-weight: 400;
+      a {
+        letter-spacing: 1px;
+
+        @include hover_ui(350ms, transparent, #0f181f);
+        text-decoration: none;
+        border-bottom: 3px solid #facd36;
+        &:hover {
+          border-bottom: 3px solid #0f181f;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    p {
+      padding: 1em;
+    }
+  }
+}
+.logo {
+  height: 100%;
+  width: 74px;
+}
+.imagesPhone {
+  position: absolute;
+  right: 8%;
+  bottom: 16%;
+  height: 610px;
+z-index: 1;
+  @media only screen and (max-width: 768px) {
+    height: 337px;
+    right: auto;
+    bottom: -16%;
+  }
+}
+.textArea {
+  padding-left: 5%;
+  width: 40vw;
+  position: absolute;
+  z-index: 2;
+
+  @media only screen and (max-width: 768px) {
+    padding-left: 0;
+    padding-right: 0;
+    width: 74%;
+    position: absolute;
+    z-index: 2;
+  }
+}
+.bgAux {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+h2 {
+  color: #fff;
+  font-size: 6.8em;
+  line-height: 114%;
+  @media only screen and (max-width: 768px) {
+    font-size: 2em;
+  }
+}
